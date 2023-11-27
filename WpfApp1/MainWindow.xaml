@@ -1,0 +1,55 @@
+﻿<mah:MetroWindow
+    x:Class="WpfApp1.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:mah="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+    xmlns:local="clr-namespace:WpfApp1"
+    mc:Ignorable="d"
+    Title="MainWindow" Height="450" Width="800">
+    <Grid Margin="5" d:Background="Gray">
+        <WrapPanel Orientation="Horizontal">
+            <Button Content="Button" Style="{StaticResource MahApps.Styles.Button.Flat}" Margin="5" Padding="30,0" VerticalAlignment="Center"/>
+            <TextBox Text="TextBox" Margin="5" Padding="10,0" MinWidth="100" VerticalContentAlignment="Center" VerticalAlignment="Center"/>
+            <Border Margin="5" Padding="10,0" MinWidth="100" VerticalAlignment="Center" BorderThickness="1" BorderBrush="{StaticResource MahApps.Brushes.AccentBase}">
+                <TextBlock Text="TextBlock"/>
+            </Border>
+            <Label Content="Label" VerticalAlignment="Center"/>
+            <TabControl>
+                <TabItem Header="Tab1">
+                    <Button Content="Tab1WWWWWWWWWWWWWWWWW"/>
+                </TabItem>
+                <TabItem Header="Tab2">
+                    <Button Content="Tab2"/>
+                </TabItem>
+            </TabControl>
+            <TabControl Background="DarkGray">
+                <TabItem Header="Tab1">
+                    <Button Content="Tab1"/>
+                </TabItem>
+                <TabItem Header="Tab2">
+                    <Button Content="Tab2"/>
+                </TabItem>
+                <TabItem Header="Tab3" IsEnabled="False">
+                    <Button Content="Tab3"/>
+                </TabItem>
+            </TabControl>
+            <ComboBox Width="100" VerticalAlignment="Center" Margin="5">
+                <ComboBoxItem Content="AAAAAAAAA"/>
+                <ComboBoxItem Content="BB"/>
+                <ComboBoxItem Content="CCCCCC"/>
+                <ComboBoxItem Content="DDDDD"/>
+            </ComboBox>
+            <CheckBox Content="CheckBox" Margin="5"/>
+            <GroupBox Header="Group Box" Margin="5">
+                <Button Content="ButtonWWWWWWWWWWWWWW" Margin="5"/>
+            </GroupBox>
+            <Grid Background="DarkGray">
+                <GroupBox Header="GroupBox">
+                    <TextBox Margin="5" Width="200" Text="TextBox" VerticalAlignment="Center"/>
+                </GroupBox>
+            </Grid>
+        </WrapPanel>
+    </Grid>
+</mah:MetroWindow>
